@@ -1,2 +1,2 @@
 # Notes
-Purpose: Storing my notes 
+Purpose: Storing my notes

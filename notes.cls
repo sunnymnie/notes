@@ -65,15 +65,22 @@ right=3em}
 \par
 \textbf{Quote }
 }
+\newcommand{\Example}{
+\par
+\textsl{Example }
+}
+\newcommand{\Bold}[1]{
+\par
+\textbf{#1 }
+}
 
 \newcommand{\Image}[2]{
 \vspace{1em}
 % \raggedright{\textbf{\textsc{#2}}}
+
 \begin{center}
   \textbf{\textsc{#2}}\par
 \end{center}
-% \centering{\textbf{\textsc{#2}}}
-
 \includegraphics[width=\linewidth]{\jobname/#1}
 }
 
@@ -85,6 +92,15 @@ right=3em}
 \begin{itemize}
 \setlength\itemsep{0em}}
 {\end{itemize}}
+
+\newenvironment{Olist}[1]
+{
+\par
+\vspace{1em}
+\textbf{#1}
+\begin{enumerate}
+\setlength\itemsep{0em}}
+{\end{enumerate}}
 
 \graphicspath{ {./images/} } %Make sure to know if notes/images or respect to tex file
 

@@ -55,15 +55,20 @@ right=3em}
 
 \newcommand{\Advice}{
 \vspace{1em}
-\textbf{Advice }
+\textbf{\textsc{Advice }}
+}
+
+\newcommand{\How}{
+\par
+\textbf{\textsc{how }}
 }
 \newcommand{\Fact}{
 \par
-\textbf{Fact }
+\textbf{\textsc{Fact }}
 }
 \newcommand{\Quote}{
 \par
-\textbf{Quote }
+\textbf{\textsc{Quote }}
 }
 \newcommand{\Example}{
 \par
@@ -71,18 +76,17 @@ right=3em}
 }
 \newcommand{\Bold}[1]{
 \par
-\textbf{#1 }
+\textbf{\textsc{#1 }}
 }
 
 \newcommand{\Image}[2]{
 \vspace{1em}
-% \raggedright{\textbf{\textsc{#2}}}
-
+\begin{figure}
 \begin{center}
   \textbf{\textsc{#2}}\par
 \end{center}
 \includegraphics[width=\linewidth]{\jobname/#1}
-}
+\end{figure}}
 
 \newenvironment{List}[1]
 {
@@ -96,11 +100,18 @@ right=3em}
 \newenvironment{Olist}[1]
 {
 \par
-\vspace{1em}
 \textbf{#1}
 \begin{enumerate}
 \setlength\itemsep{0em}}
 {\end{enumerate}}
+
+\newenvironment{Examplelist}[1]
+{
+\par
+\Example #1
+\begin{itemize}
+\setlength\itemsep{0em}}
+{\end{itemize}}
 
 \graphicspath{ {./images/} } %Make sure to know if notes/images or respect to tex file
 

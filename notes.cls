@@ -66,6 +66,26 @@ right=3em}
 \textbf{Quote }
 }
 
+\newcommand{\Image}[2]{
+\vspace{1em}
+% \raggedright{\textbf{\textsc{#2}}}
+\begin{center}
+  \textbf{\textsc{#2}}\par
+\end{center}
+% \centering{\textbf{\textsc{#2}}}
+
+\includegraphics[width=\linewidth]{\jobname/#1}
+}
+
+\newenvironment{List}[1]
+{
+\par
+\vspace{1em}
+\textbf{#1}
+\begin{itemize}
+\setlength\itemsep{0em}}
+{\end{itemize}}
+
 \graphicspath{ {./images/} } %Make sure to know if notes/images or respect to tex file
 
 \endinput

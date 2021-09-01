@@ -1,6 +1,5 @@
 ## Ignore build and images folder
 build/
-images/
 
 ## Core latex/pdflatex auxiliary files:
 *.aux

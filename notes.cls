@@ -32,6 +32,7 @@
 \RequirePackage{fontspec}
 \RequirePackage{tocloft}
 \RequirePackage{setspace}
+\RequirePackage{graphicx}
 
 %% Additional TeX/LaTeX code...
 
@@ -64,5 +65,7 @@ right=3em}
 \par
 \textbf{Quote }
 }
+
+\graphicspath{ {./images/} } %Make sure to know if notes/images or respect to tex file
 
 \endinput
